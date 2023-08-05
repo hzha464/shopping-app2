@@ -1,19 +1,66 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import { Provider } from "react-redux";
+import { store } from "./store";
+import { ApiProvider } from "@reduxjs/toolkit/dist/query/react";
+import { api } from "./api/shopapi";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.css";
+import path from "path";
+import NavBar from "./component/Navbar";
+import Login from "./component/Login";
+import Register from "./component/Register";
+import BrandPage from "./component/BrandPage";
+import Detail from "./component/Detail";
+import Cart from "./component/Cart";
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  document.getElementById("root") as HTMLElement
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const router = createBrowserRouter([
+  {
+    // path: "/",
+    // element: <App />,
+    path: "/",
+    element: <NavBar />,
+    children: [
+      {
+        path: "/",
+        element: <App />,
+      },
+      {
+        path: "/Login",
+        element: <Login />,
+      },
+      {
+        path: "/Register",
+        element: <Register />,
+      },
+      {
+        path: "/Brand/:brand",
+        element: <BrandPage />,
+      },
+      {
+        path: "/detail/:id",
+        element: <Detail />,
+      },
+      {
+        path: "/Cart",
+        element: <Cart />,
+      },
+    ],
+  },
+]);
+
+root.render(
+  <React.StrictMode>
+    <Provider store={store}>
+      <ApiProvider api={api}>
+        <RouterProvider router={router} />
+      </ApiProvider>
+    </Provider>
+  </React.StrictMode>
+);

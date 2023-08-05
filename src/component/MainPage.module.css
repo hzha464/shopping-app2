@@ -1,0 +1,16 @@
+.slide {
+  position: relative;
+  top: 5rem;
+  overflow: auto;
+}
+
+.fixImage {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+.brand {
+  position: relative;
+  top: 10rem;
+  overflow: auto;
+}
