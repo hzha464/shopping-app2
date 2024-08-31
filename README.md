@@ -1,46 +1,55 @@
-# Getting Started with Create React App
+# E-commerce Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains the code for a full-stack e-commerce web application, featuring both backend and frontend components. The application provides core e-commerce functionalities such as product management, user authentication, and order processing, all built with modern web technologies.
 
-## Available Scripts
+## Project Overview
 
-In the project directory, you can run:
+- **Backend**: Developed using C# and .NET Core.
+- **Frontend**: Built with React, utilizing Context API and hooks for state management.
+- **Deployment**: Hosted on Microsoft Azure for high availability and scalability.
 
-### `npm start`
+### Home Page
+![image](https://github.com/user-attachments/assets/37d86dd4-7a25-4fee-a8f2-9234c4c2a4f5)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Product Page
+![image](https://github.com/user-attachments/assets/8c963c74-1ed9-4f16-ae67-fd8651a85ac3)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Login Page
+![image](https://github.com/user-attachments/assets/7f905349-50a9-490d-bc4c-4eb3bc8118a4)
 
-### `npm test`
+### Shopping Cart
+![image](https://github.com/user-attachments/assets/15a993d0-fba8-4e88-bd55-2a1779d58f99)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
 
-### `npm run build`
+- **Product Management**: CRUD operations for managing product inventory.
+- **User Authentication**: Secure login and registration functionalities.
+- **Order Processing**: Handles user orders, including cart management and checkout.
+- **State Management**: Utilizes React's Context API and hooks for efficient state handling.
+- **Navigation**: Smooth, dynamic navigation using React Router.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technologies and Tools
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Backend**: C#, .NET Core, Entity Framework
+- **Frontend**: React, Context API, React Router, Hooks
+- **Cloud Hosting**: Microsoft Azure
+- **Database**: SQL Server
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Installation and Setup
 
-### `npm run eject`
+### Prerequisites
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Ensure you have the following installed:
+- .NET Core SDK
+- Node.js and npm
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Deployment
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+The application is deployed on Microsoft Azure. Follow Azure's deployment guidelines to set up the environment, including configuring the database and application services.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## Contact
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+For any questions or suggestions, please contact:
+- **Hongyang Zhang**
+- Email: [hzha464@aucklanduni.ac.nz](mailto:hzha464@aucklanduni.ac.nz)
